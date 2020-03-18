@@ -13,7 +13,7 @@ The project is undergoing, other files will be uploaded soon.
 ### Added
 China_total_cases_of_confirmed_infections.csv
 
-## [0.03] - 2020-03-18
+## [0.02] - 2020-03-18
 
 ### Added
 China_daily_new_deaths.csv
