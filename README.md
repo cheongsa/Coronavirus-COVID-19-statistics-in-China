@@ -35,6 +35,7 @@ China_accumulated_recoveries.csv
 
 ### Changed
 rename China_new_infections.csv as China_daily_new_infections.csv
+
 rename China_total_infections.csv as China_accumulated_infections.csv
 
 # Contributors
