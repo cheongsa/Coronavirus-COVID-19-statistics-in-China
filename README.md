@@ -27,6 +27,15 @@ China_new_infections.csv
 ### Changed
 renamed China_total_cases_of_confirmed_infections.csv as China_total_infections.csv
 
+## [0.10] - 2020-03-22
+
+### Added
+China_daily_new_recoveries.csv
+China_accumulated_recoveries.csv
+
+### Changed
+rename China_new_infections.csv as China_daily_new_infections.csv
+rename China_total_infections.csv as China_accumulated_infections.csv
 
 # Contributors
 LIU WENYUAN (Contributed equally)
