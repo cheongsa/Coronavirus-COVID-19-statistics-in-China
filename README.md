@@ -6,14 +6,14 @@ The project is undergoing, other files will be uploaded and updated soon.
 
 If you find this dataset useful in your research please consider citing:
 
-@article{liu2020coronavirus,
-    title={Coronavirus disease 2019 (COVID-19) outbreak in China, spatial temporal dataset},
-    author={Wenyuan Liu and Peter Tsung-Wen Yen and Siew Ann Cheong},
-    year={2020},
-    eprint={2003.11716},
-    archivePrefix={arXiv},
-    primaryClass={q-bio.PE}
-}
+    @article{liu2020coronavirus,
+        title={Coronavirus disease 2019 (COVID-19) outbreak in China, spatial temporal dataset},
+        author={Wenyuan Liu and Peter Tsung-Wen Yen and Siew Ann Cheong},
+        year={2020},
+        eprint={2003.11716},
+        archivePrefix={arXiv},
+        primaryClass={q-bio.PE}
+    }
 
 # File format
 
