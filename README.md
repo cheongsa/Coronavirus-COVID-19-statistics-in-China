@@ -3,7 +3,7 @@
 A data set on COVID-19 pandemic in China, which covers daily statistics of confirmed cases (new and cumulative), recoveries (new and cumulative) and deaths (new and cumulative) at city level.
 All data are extracted from Chinese government reports.
 The project is undergoing, we are working on data clean currently.
-All original files are renamed with "_old" postfix, and new files with data has been checked are uploaded. Currently new files only cover *Beijing, Tianjin, Shanghai, Anhui, Fujian, Jiangxi, Shandong, Chongqing, Tibet, Gansu, Qinghai, Ningxia, Xinjiang, HongKong and Macao*, other provinces will be included soon.
+All original files are renamed with "_old" postfix, and new files with data has been checked are uploaded. Currently new files only cover *Beijing, Tianjin, Shanghai, Anhui, Fujian, Jiangxi, Shandong, Chongqing, Tibet, Gansu, Qinghai, Ningxia, Xinjiang, HongKong  Macao, Inner Mongolia, Jiangsu, Hunan, Guangdong, Guangxi, Hainan, Guizhou, Yunnan and Shaanxi*, other provinces will be included soon.
 **People work with old version are encouraged to move to the new version since most errors have been fixed in the new version.** 
 
 If you find this dataset useful in your research please consider citing:
@@ -20,6 +20,25 @@ If you find this dataset useful in your research please consider citing:
 # File format
 
 # Changelog
+
+## 【0.60】 - 2020-04-02
+
+## Changed
+
+update China_daily_new_infections.csv
+
+update China_daily_new_recoveries.csv
+
+update China_daily_new_deaths.csv
+
+update China_accumulated_infections.csv
+
+update China_accumulated_recoveries.csv
+
+update China_accumulated_deaths.csv
+
+The information on Inner Mongolia, Jiangsu, Hunan, Guangdong, Guangxi, Hainan, Guizhou, Yunnan, Shaanxi has been added.
+
 
 ## [0.40] - 2020-04-01
 
