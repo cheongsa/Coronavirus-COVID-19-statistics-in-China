@@ -21,7 +21,7 @@ If you find this dataset useful in your research please consider citing:
 
 # Changelog
 
-## 【0.60】 - 2020-04-02
+## [0.60] - 2020-04-02
 
 ## Changed
 
