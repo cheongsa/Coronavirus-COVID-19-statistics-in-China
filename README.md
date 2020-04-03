@@ -18,6 +18,40 @@ If you find this dataset useful in your research please consider citing:
     }
 
 # File format
+Each file contains 317 lines and 44 columns: the first row is the header, the name for each column, while other rows are the data for all cities/counties. For each row, the first four columns are names for city/county: the first cloumns is the name of city/county in English, the second column is the name of the provincial-level region this city/county belongs to in English, the third column is the name of city/county in Chinese, and the fourth column is the name of the provincial-level region this city/county belongs to in Chinese. The remaining columns are dates ranging from 20 January 2020 to Febraruy 29 2020 (in YYYY-
+MM-DD format).  For example, in China_accumulated_infections.csv, for row 1, column 1 is "Beijing Municipality", whereas, column 20 (2020-02-04) is 253. This tells us that there are 253 confirmed cases reported in Beijing up till 24:00 4 Febraruy 2020.
+
+# Gallery
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+new_infections = pd.read_csv("China_daily_new_infections.csv")
+total_infections = pd.read_csv("China_accumulated_infections.csv")
+Wenzhou = total_infections[total_infections['Prefectural level or Country level'] == "Wenzhou"]
+dates = Wenzhou.columns[4:].tolist()
+numbers = Wenzhou.iloc[0].tolist()[4:]
+
+fig, ax = plt.subplots()
+ax.bar(dates, numbers)
+plt.xticks(dates, dates, rotation='vertical')
+plt.title("Wenzhou")
+```
+![image](https://github.com/cheongsa/Coronavirus-COVID-19-statistics-in-China/blob/master/Wenzhou.png)
+
+```python
+province_data = new_infections.groupby('Provincial-level regions').sum().reset_index()
+dates = province_data.columns[1:].tolist()
+Anhui = province_data[province_data['Provincial-level regions'] == "Anhui"]
+Guangdong = province_data[province_data['Provincial-level regions'] == "Guangdong"]
+fig, ax = plt.subplots()
+ax.plot(dates, Anhui.iloc[0][1:].tolist(), label="Anhui")
+ax.plot(dates, Guangdong.iloc[0][1:].tolist(), label="Guangdong")
+ax.set_xticklabels(dates, rotation='vertical')
+plt.legend()
+```
+![image](https://github.com/cheongsa/Coronavirus-COVID-19-statistics-in-China/blob/master/Guangdong_Anhui.png)
 
 # Changelog
 
