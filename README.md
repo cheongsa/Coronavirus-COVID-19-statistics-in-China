@@ -2,9 +2,7 @@
 
 A data set on COVID-19 pandemic in China, which covers daily statistics of confirmed cases (new and cumulative), recoveries (new and cumulative) and deaths (new and cumulative) at city level.
 All data are extracted from Chinese government reports.
-The project is undergoing, we are working on data clean currently.
-All original files are renamed with "_old" postfix, and new files with data has been checked are uploaded. Currently new files only cover *Beijing, Tianjin, Shanghai, Anhui, Fujian, Jiangxi, Shandong, Chongqing, Tibet, Gansu, Qinghai, Ningxia, Xinjiang, HongKong  Macao, Inner Mongolia, Jiangsu, Hunan, Guangdong, Guangxi, Hainan, Guizhou, Yunnan, Shaanxi, Hebei, Shanxi, Jilin, Heilongjiang, Zhejiang and Sichuan*, other provinces will be included soon.
-**People work with old version are encouraged to move to the new version since most errors have been fixed in the new version.** 
+We have finished the data clean, so enjoy the dataset and have fun.
 
 If you find this dataset useful in your research please consider citing:
 
@@ -18,7 +16,7 @@ If you find this dataset useful in your research please consider citing:
     }
 
 # File format
-Each file contains 317 lines and 44 columns: the first row is the header, the name for each column, while other rows are the data for all cities/counties. For each row, the first four columns are names for city/county: the first cloumns is the name of city/county in English, the second column is the name of the provincial-level region this city/county belongs to in English, the third column is the name of city/county in Chinese, and the fourth column is the name of the provincial-level region this city/county belongs to in Chinese. The remaining columns are dates ranging from 20 January 2020 to Febraruy 29 2020 (in YYYY-
+Each file contains 393 lines and 44 columns: the first row is the header, the name for each column, while other rows are the data for all cities/counties. For each row, the first four columns are names for city/county: the first cloumns is the name of city/county in English, the second column is the name of the provincial-level region this city/county belongs to in English, the third column is the name of city/county in Chinese, and the fourth column is the name of the provincial-level region this city/county belongs to in Chinese. The remaining columns are dates ranging from 20 January 2020 to Febraruy 29 2020 (in YYYY-
 MM-DD format).  For example, in China_accumulated_infections.csv, for row 1, column 1 is "Beijing Municipality", whereas, column 20 (2020-02-04) is 253. This tells us that there are 253 confirmed cases reported in Beijing up till 24:00 4 Febraruy 2020.
 
 # Gallery
@@ -53,7 +51,49 @@ plt.legend()
 ```
 ![image](https://github.com/cheongsa/Coronavirus-COVID-19-statistics-in-China/blob/master/Guangdong_Anhui.png)
 
+![Test image](https://github.com/cheongsa/Coronavirus-COVID-19-statistics-in-China/blob/master/0201.png)
+*Figure 1:  The number of new infections of COVID-19 of all cities in China on 1 Feb 2020.*
+
+![image](https://github.com/cheongsa/Coronavirus-COVID-19-statistics-in-China/blob/master/0211.png)
+*Figure 2:  The number of new infections of COVID-19 of all cities in China on 11 Feb 2020.*
+
+![image](https://github.com/cheongsa/Coronavirus-COVID-19-statistics-in-China/blob/master/0221.png)
+*Figure 3:  The number of new infections of COVID-19 of all cities in China on 21 Feb 2020.*
+
 # Changelog
+
+## [0.90] - 2020-04-06
+
+## Changed
+
+update China_daily_new_infections.csv
+
+update China_daily_new_recoveries.csv
+
+update China_daily_new_deaths.csv
+
+update China_accumulated_infections.csv
+
+update China_accumulated_recoveries.csv
+
+update China_accumulated_deaths.csv
+
+The information on Hubei, Liaoning and Henan has been added. 
+
+
+delete China_daily_new_infections_old.csv
+
+delete China_daily_new_recoveries_old.csv
+
+delete China_daily_new_deaths_old.csv
+
+delete China_accumulated_infections_old.csv
+
+delete China_accumulated_recoveries_old.csv
+
+delete China_accumulated_deaths_old.csv
+
+
 
 ## [0.70] - 2020-04-03
 
