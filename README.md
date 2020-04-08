@@ -2,7 +2,7 @@
 
 A data set on COVID-19 pandemic in China, which covers daily statistics of confirmed cases (new and cumulative), recoveries (new and cumulative) and deaths (new and cumulative) at city level.
 All data are extracted from Chinese government reports.
-We have finished the data clean, so enjoy the dataset and have fun.
+We have finished the data clean, so enjoy the dataset and have fun. 
 
 If you find this dataset useful in your research please consider citing:
 
